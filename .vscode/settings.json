@@ -1,0 +1,7 @@
+{
+  "sync.autoUpload": false,
+  "rust-client.rustupPath": "/usr/local/cargo/bin/rustup",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rust-lang.rust",
+  "editor.tabSize": 4,
+}
