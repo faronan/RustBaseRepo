@@ -38,6 +38,10 @@ RUN apt-get update \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     #
+    # Use zsh
+    && apt-get -y install zsh \
+    && chsh -s $(which zsh) \
+    #
     # Clean up
     && apt-get autoremove -y \
     && apt-get clean -y \
