@@ -1,4 +1,4 @@
-# Rust base repository
+# rust-template
 
 ## Requirement
 - Docker
