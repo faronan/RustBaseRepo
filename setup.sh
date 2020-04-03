@@ -6,6 +6,7 @@ fi
 rm .env
 rm setup.sh
 
+echo "" > README.md
 echo ".devcontainer" >> .gitignore
 echo ".vscode" >> .gitignore
 
@@ -13,6 +14,5 @@ grep -l 'base' Cargo.toml .vscode/launch.json  | xargs sed -i "" "s/base/${PACKA
 
 cargo update
 
-git init
 git add .
-git commit -m "initial commit"
+git commit --amend -C HEAD
